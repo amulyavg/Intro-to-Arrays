@@ -1,0 +1,12 @@
+class Solution {
+    public int findNumbers(int[] nums) {
+        int actualNum = 0;
+        for (int i : nums) {
+            int numDigits = String.valueOf(i).length();
+            if (numDigits % 2 == 0) {
+                actualNum++;
+            }
+        }
+        return actualNum;
+    }
+}
